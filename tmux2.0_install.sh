@@ -9,9 +9,9 @@ make
 make install 
 cd ..
 yum install ncurses-devel -y
-wget https://github.com/tmux/tmux/releases/download/2.0/tmux-2.0.tar.gz
-tar zxvf tmux-2.0.tar.gz
-cd tmux-2.0
+wget https://github.com/tmux/tmux/releases/download/2.2/tmux-2.2.tar.gz
+tar zxvf tmux-2.2.tar.gz
+cd tmux-2.2
 ./configure
 make
 make install 

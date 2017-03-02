@@ -15,3 +15,5 @@ cd tmux-2.3
 ./configure
 make
 make install 
+
+ln -s /usr/local/lib/libevent-2.1.so.6 /usr/lib64/libevent-2.1.so.6

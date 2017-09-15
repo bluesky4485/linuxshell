@@ -19,7 +19,11 @@ tomcat直接使用压缩包形式下载下来解压即可。
 
 nginx使用增进repo源形式，增进一个nginx的yum repo，再进行yum安装。
 
-## git&mariadb安装
+## tmux&git&mariadb安装
+tmux使用ius的源直接进行安装了
+
 默认centos源里面的git版本比较老，需要使用第三方源进行安装。
 
-使用官方提供的rpm添加repo形式进行安装，添加官方的源，国内速度会比较慢。
+注释中使用官方提供的rpm添加repo形式进行安装，添加官方的源，国内速度会比较慢。
+
+现在使用的是ius的源，提供了git和mariadb的安装包，mariadb安装后，启动命令为`service mariadb start`，设置root密码命令：`mysqladmin password "new_password"`,

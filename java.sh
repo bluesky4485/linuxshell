@@ -6,10 +6,12 @@ yum install wget -y
 #wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 #yum makecache
 
+#wget http://apache.claz.org/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
 wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
 tar zxvf apache-tomcat-8.5.20.tar.gz
 mv apache-tomcat-8.5.20 /usr/
 
+#wget http://192.161.179.139/jdk-8u144-linux-x64.rpm
 wget http://dl.huangketech.com/jdk-8u144-linux-x64.rpm
 rpm -ivh jdk-8u144-linux-x64.rpm
 

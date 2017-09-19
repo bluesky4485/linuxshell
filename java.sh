@@ -40,4 +40,6 @@ yum install git2u -y
 yum install mariadb101u-server -y
 yum install nginx -y
 yum install tmux2u -y
+sed -i '/pid-file/a\lower_case_table_names=1' /etc/my.cnf.d/mariadb-server.cnf
+nginx
 service mariadb start

@@ -45,6 +45,10 @@ sed -i '/pid-file/a\lower_case_table_names=1' /etc/my.cnf.d/mariadb-server.cnf
 nginx
 service mariadb start
 
+wget https://raw.github.com/sivel/speedtest-cli/master/speedtest.py
+chmod a+rx speedtest.py
+mv speedtest.py /usr/local/bin/speedtest
+chown root:root /usr/local/bin/speedtest
 
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh

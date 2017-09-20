@@ -50,7 +50,7 @@ chown root:root /usr/local/bin/speedtest
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 
-yum install libnet libpcap libnet-devel libpcap-devel -y
+yum install gcc libnet libpcap libnet-devel libpcap-devel -y
 wget https://github.com/snooda/net-speeder/archive/master.zip
 unzip master.zip
 cd net-speeder-master

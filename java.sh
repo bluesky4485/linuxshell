@@ -58,3 +58,5 @@ sh build.sh -DCOOKED
 cp net_speeder /usr/bin/
 echo 'nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &' >> /etc/rc.local
 nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &
+cd ..
+./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log

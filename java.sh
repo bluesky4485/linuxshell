@@ -2,6 +2,7 @@
 mkdir jdk
 cd jdk
 yum install wget -y
+yum install vim -y
 #mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 #wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 #yum makecache
@@ -43,3 +44,16 @@ yum install tmux2u -y
 sed -i '/pid-file/a\lower_case_table_names=1' /etc/my.cnf.d/mariadb-server.cnf
 nginx
 service mariadb start
+
+
+wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+chmod +x shadowsocks-all.sh
+
+yum install libnet libpcap libnet-devel libpcap-devel
+wget https://github.com/snooda/net-speeder/archive/master.zip
+unzip master.zip
+cd net-speeder-master
+sh build.sh -DCOOKED
+cp net_speeder /usr/bin/
+echo 'nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &' >> /etc/rc.local
+nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &

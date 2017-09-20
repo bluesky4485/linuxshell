@@ -37,10 +37,8 @@ chmod +x ius.sh
 yum remove mariadb* -y
 yum update -y
 
-yum install git2u -y
-yum install mariadb101u-server -y
-yum install nginx -y
-yum install tmux2u -y
+yum install git2u mariadb101u-server nginx tmux2u -y
+
 sed -i '/pid-file/a\lower_case_table_names=1' /etc/my.cnf.d/mariadb-server.cnf
 nginx
 service mariadb start
@@ -53,7 +51,7 @@ chown root:root /usr/local/bin/speedtest
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 
-yum install libnet libpcap libnet-devel libpcap-devel
+yum install libnet libpcap libnet-devel libpcap-devel -y
 wget https://github.com/snooda/net-speeder/archive/master.zip
 unzip master.zip
 cd net-speeder-master

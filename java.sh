@@ -1,8 +1,7 @@
 #!/bin/bash
 mkdir jdk
 cd jdk
-yum install wget -y
-yum install vim -y
+yum install wget unzip vim -y
 #mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
 #wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 #yum makecache

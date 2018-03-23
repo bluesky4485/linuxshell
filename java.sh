@@ -7,9 +7,9 @@ yum install wget unzip vim -y
 #yum makecache
 
 #wget http://apache.claz.org/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
-wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz
-tar zxvf apache-tomcat-8.5.20.tar.gz
-mv apache-tomcat-8.5.20 /usr/
+wget http://mirrors.hust.edu.cn/apache/tomcat/tomcat-8/v8.5.29/bin/apache-tomcat-8.5.29.tar.gz
+tar zxvf apache-tomcat-8.5.29.tar.gz
+mv apache-tomcat-8.5.29 /usr/
 
 #wget http://192.161.179.139/jdk-8u144-linux-x64.rpm
 wget http://dl.huangketech.com/jdk-8u144-linux-x64.rpm
@@ -47,16 +47,16 @@ chmod a+rx speedtest.py
 mv speedtest.py /usr/local/bin/speedtest
 chown root:root /usr/local/bin/speedtest
 
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
+#wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+#chmod +x shadowsocks-all.sh
 
-yum install gcc libnet libpcap libnet-devel libpcap-devel -y
-wget https://github.com/snooda/net-speeder/archive/master.zip
-unzip master.zip
-cd net-speeder-master
-sh build.sh -DCOOKED
-cp net_speeder /usr/bin/
-echo 'nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &' >> /etc/rc.local
-nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &
-cd ..
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+#yum install gcc libnet libpcap libnet-devel libpcap-devel -y
+#wget https://github.com/snooda/net-speeder/archive/master.zip
+#unzip master.zip
+#cd net-speeder-master
+#sh build.sh -DCOOKED
+#cp net_speeder /usr/bin/
+#echo 'nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &' >> /etc/rc.local
+#nohup /usr/bin/net_speeder venet0 "ip" >/dev/null 2>&1 &
+#cd ..
+#./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log

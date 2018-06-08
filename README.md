@@ -27,3 +27,9 @@ tmux使用ius的源直接进行安装了
 注释中使用官方提供的rpm添加repo形式进行安装，添加官方的源，国内速度会比较慢。
 
 现在使用的是ius的源，提供了git和mariadb的安装包，mariadb安装后，启动命令为`service mariadb start`，设置root密码命令：`mysqladmin password "new_password"`,
+
+
+## jboot的docker运行环境
+主要是jdk主机环境和nginx和docker的安装，配合[jboot-docker](https://github.com/bluesky4485/jboot-docker)使用的。
+
+其实jdk也可以放到docker里面，只是感觉没必要，所以还是放宿主机了。

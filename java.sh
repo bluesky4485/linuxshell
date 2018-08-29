@@ -12,10 +12,10 @@ tar zxvf apache-tomcat-8.5.29.tar.gz
 mv apache-tomcat-8.5.29 /usr/
 
 #wget http://192.161.179.139/jdk-8u144-linux-x64.rpm
-wget http://dl.huangketech.com/jdk-8u144-linux-x64.rpm
-rpm -ivh jdk-8u144-linux-x64.rpm
+wget http://dl.huangketech.com/jdk-8u181-linux-x64.rpm
+rpm -ivh jdk-8u181-linux-x64.rpm
 
-echo export JAVA_HOME=/usr/java/jdk1.8.0_144 >>/etc/profile
+echo export JAVA_HOME=/usr/java/jdk1.8.0_181 >>/etc/profile
 echo export CLASSPATH=.:\$JAVA_HOME/jre/lib/rt.jar:\$JAVA_HOME/lib/dt.jar:\$JAVA_HOME/lib/tools.jar >>/etc/profile
 echo export PATH=\$PATH:\$JAVA_HOME/bin >>/etc/profile
 source /etc/profile

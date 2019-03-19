@@ -1,4 +1,5 @@
 #!/bin/bash
+yum install gcc -y
 mkdir tmux
 cd tmux
 wget https://github.com/libevent/libevent/releases/download/release-2.1.8-stable/libevent-2.1.8-stable.tar.gz

@@ -15,7 +15,7 @@ mv apache-tomcat-8.5.29 /usr/
 wget http://dl.huangketech.com/jdk-8u192-linux-x64.rpm
 rpm -ivh jdk-8u192-linux-x64.rpm
 
-echo export JAVA_HOME=/usr/java/jdk1.8.0_192- >>/etc/profile
+echo export JAVA_HOME=/usr/java/jdk1.8.0_271-amd64 >>/etc/profile
 echo export CLASSPATH=.:\$JAVA_HOME/jre/lib/rt.jar:\$JAVA_HOME/lib/dt.jar:\$JAVA_HOME/lib/tools.jar >>/etc/profile
 echo export PATH=\$PATH:\$JAVA_HOME/bin >>/etc/profile
 source /etc/profile
